@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  font-family: "Questrial", sans-serif;
+}
+
+.container{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+.container h1{
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2.5rem;
+
+}
+
+.wrapper{
+  display: flex;
+  width: 1000px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 2rem;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 6px 10px 5px grey;
+}
+.logo{
+  margin-left: 15px;
+  animation: slider 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slider{
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(-1600px);
+  }
+}
